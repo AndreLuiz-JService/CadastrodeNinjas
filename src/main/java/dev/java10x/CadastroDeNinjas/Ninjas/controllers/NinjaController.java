@@ -1,4 +1,4 @@
-package dev.java10x.CadastroDeNinjas.Ninjas.models;
+package dev.java10x.CadastroDeNinjas.Ninjas.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

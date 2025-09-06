@@ -1,11 +1,10 @@
-package dev.java10x.CadastroDeNinjas.Ninjas.models;
+package dev.java10x.CadastroDeNinjas.Ninjas.domains;
 
 import jakarta.persistence.*;
 
-// Entity transforma uma classe em uma entidade do DB
 @Entity(name = "Ninja")
 @Table(name = "ninjas")
-public class NinjaModel {
+public class Ninja {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,10 +13,10 @@ public class NinjaModel {
     private String email;
     private int idade;
 
-    public NinjaModel() {
+    public Ninja() {
     }
 
-    public NinjaModel(String nome, String email, int idade) {
+    public Ninja(String nome, String email, int idade) {
         this.nome = nome;
         this.email = email;
         this.idade = idade;
@@ -49,7 +48,7 @@ public class NinjaModel {
 
     @Override
     public String toString() {
-        return "NinjaModel{" +
+        return "Ninja{" +
                 "nome='" + nome + '\'' +
                 ", email='" + email + '\'' +
                 ", idade=" + idade +
