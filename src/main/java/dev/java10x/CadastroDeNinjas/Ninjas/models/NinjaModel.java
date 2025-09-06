@@ -1,10 +1,10 @@
-package dev.java10x.CadastroDeNinjas.models;
+package dev.java10x.CadastroDeNinjas.Ninjas.models;
 
 import jakarta.persistence.*;
 
 // Entity transforma uma classe em uma entidade do DB
-@Entity
-@Table(name = "tb_cadastro")
+@Entity(name = "Ninja")
+@Table(name = "ninjas")
 public class NinjaModel {
 
     @Id
