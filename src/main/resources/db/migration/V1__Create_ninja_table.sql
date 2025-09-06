@@ -1,7 +1,7 @@
 -- Criação da tabela de cadastro de ninjas
 CREATE TABLE  ninjas (
     id BIGSERIAL PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
-    idade INTEGER NOT NULL CHECK (idade > 0)
+    age SMALLINT NOT NULL CHECK (age > 0)
 );
