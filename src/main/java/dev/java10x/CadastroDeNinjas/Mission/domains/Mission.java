@@ -30,14 +30,14 @@ public class Mission {
 
     private String description;
 
-    private LocalDateTime start_at;
-    private LocalDateTime end_at;
-
     @Enumerated(EnumType.STRING)
     private MissionRanking ranking;
 
     @Enumerated(EnumType.STRING)
     private MissionState state;
+
+    private LocalDateTime start_at;
+    private LocalDateTime end_at;
 
     @OneToMany(mappedBy = "mission", cascade = CascadeType.ALL, orphanRemoval = true)
     @ToString.Exclude
