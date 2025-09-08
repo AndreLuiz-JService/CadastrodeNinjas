@@ -16,7 +16,6 @@ import java.util.Set;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
 public class Ninja {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
